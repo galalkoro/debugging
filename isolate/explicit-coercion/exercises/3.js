@@ -1,12 +1,18 @@
 'use strict';
-
 /* write a function to pass the test cases
   it can be solved using only
    Number
    ===
 */
 function mystery(x, y) {
-  // write some code!
+	// write some code!
+	const param1 = Number(x);
+	const param2 = Number(y);
+	if (param1 === param2) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 // all of the test cases are correct
@@ -46,4 +52,3 @@ console.assert(isTrue8, 'Test 8');
 const returned9 = mystery(undefined, undefined);
 const isTrue9 = returned9 === false;
 console.assert(isTrue9, 'Test 9');
-
