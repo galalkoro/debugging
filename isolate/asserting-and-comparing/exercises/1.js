@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-=======
 'use strict';
 
 // replace the _'s to pass the isTrues
-
->>>>>>> 9de87a04b9bd42a33e55f636bd0c1d0006806057
 const isTrue1 = true === true;
 console.log(typeof isTrue1, isTrue1);
 console.assert(isTrue1, 'Assertion 1');
