@@ -1,17 +1,23 @@
 'use strict';
 
 function repeater(text, repeats) {
-  if (typeof text !== 'string') { throw new TypeError(); }
-  if (typeof repeats !== 'number') { throw new TypeError(); }
+	if (typeof text !== 'string') {
+		throw new TypeError();
+	}
+	if (typeof repeats !== 'number') {
+		throw new TypeError();
+	}
 
-  for (_; _; _) {
+	let result = '';
+	for (let i = 0; i < repeats; i++) {
+		result += `${i}${text} `;
+	}
 
-  }
-
-  if (typeof result !== 'string') { throw new TypeError(); }
-  return result;
+	if (typeof result !== 'string') {
+		throw new TypeError();
+	}
+	return result;
 }
-
 
 const _1_expect = '018 118 218 ';
 const _1_actual = repeater('18', 3);
@@ -36,4 +42,3 @@ console.assert(_5_actual === _5_expect, 'Test  5');
 const _6_expect = '0-<=>- 1-<=>- 2-<=>- 3-<=>- ';
 const _6_actual = repeater('-<=>-', 4);
 console.assert(_6_actual === _6_expect, 'Test  6');
-

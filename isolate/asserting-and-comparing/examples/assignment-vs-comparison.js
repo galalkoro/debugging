@@ -6,6 +6,7 @@
 // click on "open in JS Tutor" for best results
 
 // = assigns a value to variable, updating memory
+
 let variable = 'value 1';
 console.log(typeof variable, variable);
 
@@ -27,5 +28,3 @@ console.log(typeof thirdComparison, thirdComparison);
 // = assignments cannot be written either way
 //  Invalid left-hand side in assignment
 // 'value 2' = variable; // uncomment this line for an error
-
-

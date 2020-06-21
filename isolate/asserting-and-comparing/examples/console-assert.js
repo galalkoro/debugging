@@ -11,11 +11,10 @@ the second argument is the MESSAGE
 */
 
 console.assert(true, 'this assertion passes');
-console.assert(false, 'this assertion fails');
+console.assert(false, 'this assertion fails', NaN, undefined, Object);
 
 /* PS. open your browser's console!
 In the console, only failing asserts are printed.
   this is the standard behavior for console.assert
   these slides display passing assert to help you study
 */
-
